@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Ordering Platform - Cart</title>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh; /* Set body height to cover entire viewport */
+}
+
+#cart {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#cart-items {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+#cart-items > div {
+    margin-bottom: 15px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info .name {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+.item-info .price {
+    font-size: 16px;
+    color: #777;
+}
+
+.total-price {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+</style>
+</head>
+<body background="./imgcart.avif" style="background-size: cover; background-position: center; background-repeat: no-repeat; margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div id="cart" style="max-width: 800px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="margin-bottom: 20px; text-align: center; color: #333;">Cart</h2>
+        <div id="cart-items" style="border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;"></div>
+        <div class="total-price" id="total-price" style="margin-top: 10px; font-size: 20px; font-weight: bold; text-align: right;"></div>
+        <button id="checkout-btn" style="width: 70%; padding: 12px; margin: 0 auto; display: block; font-size: 16px; cursor: pointer; border: 1px solid #007bff; border-radius: 5px; background-color:#007bff; color: whitesmoke; transition: background-color 0.3s ease;">Pay and Proceed</button>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

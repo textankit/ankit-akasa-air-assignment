@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Ordering Platform</title>
+<style>
+    /* CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container h1 {
+        margin-bottom: 20px;
+        color: wheat;
+    }
+    .container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .container button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body background="./banner1.jpg" style=" background-size: cover; background-position: center; background-repeat: no-repeat;">
+<div class="container">
+    <h1>Welcome to Food Ordering Platform</h1>
+    <button id="login-btn" >Login</button>
+    <button id="register-btn">Register</button>
+</div>
+
+<script>
+    // JavaScript code
+    document.getElementById('login-btn').addEventListener('click', function() {
+        window.location.href = 'login.html'; // Redirect to the login page
+    });
+
+    document.getElementById('register-btn').addEventListener('click', function() {
+        window.location.href = 'register.html'; // Redirect to the registration page
+    });
+</script>
+</body>
+</html>
